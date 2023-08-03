@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth ;" lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="new.css">
+</head>
+<body id="modify" style="background-color: white; margin: 0; padding: 0; box-sizing: border-box;   ">
+
+     <div class="head" style="display: flex; justify-content:space-between; align-items: center;  z-index: 999; margin-right: 50px; height: 60px; position: fixed; width: 100%;  background-color: whitesmoke;  overflow: hidden; ">
+
+          <div>
+               <a style=" color: white; text-decoration: none; background-color: black; padding: 22px; height: 100%; " 
+                    href="#" class="menu-btn">Menu</a>
+               <div style=" color: white;  background-color: #fff; display: flex;  justify-content: center; width: 300px; height: 100vh; z-index: 99; margin-top: 20px; position: fixed; " class="menu">
+                    <ul style=" list-style-type: none; line-height: 40px; ">
+                         <li><a style=" color: black; text-decoration: none;" href="#">This is link one</a></li>
+                         <li><a style=" color: black; text-decoration: none;" href="#">This is link two</a></li>
+                         <li><a style=" color: black; text-decoration: none;" href="#">This is link three</a></li>
+                         <li><a style=" color: black; text-decoration: none;" href="#">This is link four</a></li>
+                         <li><a style=" color: black; text-decoration: none;" href="#">This is link five</a></li>
+                    </ul>
+               </div>
+          </div>
+
+          
+     
+            
+          <div>
+                         <select style="padding: 5px;" name="cssProp" id="background">
+                              <option value="black">Dark mode</option>
+                              <option value="orange">Orange mode</option>
+                         
+                         </select>
+                         <button onclick="drive ()" style="padding: 5px;" id="set">Switch theme</button>
+          </div>
+               
+               
+          
+
+
+         
+
+
+     </div>
+     
+
+     <!--<select name="cssProp" id="width">
+      <option value="100px">100px</option>
+      <option value="300px">300px</option>
+      <option value="600px">600px</option>
+     </select>
+     
+      <select name="cssProp" id="height">
+       <option value="100px">100px</option>
+       <option value="300px">300px</option>
+       <option value="600px">600px</option>
+      </select>-->
+
+     
+      <br/><br />
+     <br /><br /> 
+
+     
+     <div style="display: flex; flex-direction: row; margin-top: 40px; justify-content: space-around;">
+          <form name="myForm" method="get" onsubmit=" return validate()"
+               style=" background-color: brown; padding: 30px; max-height: 430px; border-radius: 15px;">
+               <h1 style="color: white;">Sign up Form</h1>
+     
+               <!--<p>Password must be between 5 and 8 characters</p>-->
+               <label>Username:</label>
+               <input style="width: 100%; caret-color: red; "  type="text" name="userguy">
+               <p style="color:rgb(215, 201, 201); font-size: 15px;" id="userguy"></p>
+     
+               <label>Email:</label>
+               <input style="width: 100%;" type="email" name="email">
+               <p style="color: rgb(215, 201, 201); font-size: 15px;" id="email"></p>
+     
+               <label>Phone Number:</label>
+               <input style="width: 100%;" type="tel" name="number" id="numb">
+               <p style="color: rgb(215, 201, 201); font-size: 15px;" id="phone"></p>
+     
+               <label>Password:</label>
+               <input style="width: 100%;" type="password" name="passcode">
+               <p style="color: rgb(215, 201, 201); font-size: 15px;" id="passcode"></p>
+               <input type="submit" value="Sign Up">
+     
+          </form>
+
+          <div>
+               <button onclick="creactParagraph ()">Make a new word</button>
+               <div class="biggy"></div>
+          </div>
+
+         
+     
+          <div
+               style=" display:flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgb(76, 4, 165); padding: 30px; max-width: 350px; max-height: 430px; border-radius: 15px;">
+     
+               <h1 style="color: yellow;">Foc Calculator</h1>
+               <form style=" color: white; ">
+                    Value1: <input style="width: 100%; height: 30px; padding: 5px; border: 2px solid indianred;" type="text"
+                         id="value1"><br><br>
+     
+                    Operator: <select
+                         style="padding: 5px; border: 1px solid indianred; color: white; background-color: transparent;"
+                         id="operate">
+                         <option style="color: rgb(19, 19, 19);" value="add">Plus</option>
+                         <option style="color: rgb(19, 19, 19);" value="subt">Minus</option>
+                         <option style="color: rgb(19, 19, 19);" value="divide">Divide</option>
+                         <option style="color: rgb(19, 19, 19);" value="mult">Multiply</option>
+                         <option style="color: rgb(19, 19, 19);" value="percent">Percentage</option>
+                    </select><br><br>
+                    Value2: <input style="width: 100% ; height: 30px; padding: 5px; border: 2px solid indianred;" type="text"
+                         id="value2"><br><br>
+                    <button
+                         style="width: 100%; padding: 15px; background-color: rgb(18, 47, 210); color: white; border: 1px solid indianred; border-radius: 10px;"
+                         type="button" onclick="showMe()">Calculate</button>
+     
+               </form>
+     
+               <h1 style="display: flex; justify-content: center; align-items: center; color: yellow;" id="result"></h1>
+          </div>
+     </div>
+
+     <br /><br />
+
+     <div>
+          <div class="container">
+               <div class="slider">
+                    <img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
+                    <img src="https://source.unsplash.com/VFGEhLznjPU">
+                    <img src="https://source.unsplash.com/InR-EhiO_js">
+                    <img src="https://source.unsplash.com/VFGEhLznjPU">
+                    <img src="https://source.unsplash.com/VFGEhLznjPU">
+               </div>
+               <nav class="slider-nav">
+                    <ul>
+                         <li class="arrow">
+                              <button class="previous">
+                                   <span>
+                                        Left
+                                   </span>
+                              </button>
+                         </li>
+                         <li class="arrow">
+                              <button class="next">
+                                   <span>
+                                       Right
+                                   </span>
+                              </button>
+                         </li>
+                    </ul>
+               </nav>
+          </div>
+     </div>
+     <br /><br />
+      
+
+   <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 20px;">
+     <div style="margin-right: 30px;">
+          <h3 id="long"></h3>
+          <p style="color: red;" id="you"></p>
+     </div>
+     <div style="margin-right: 20px;">
+          <h3  id="short"></h3>
+          <p id="five"></p>
+     </div>
+     <div style="margin-right: 20px;">
+          <h3    id="damo"></h3>
+          <p id="dami"></p>
+     </div>
+     <div style="margin-right: 20px;">
+          
+          <p>Password must be between 5 and 8 characters</p>
+          <input type="password" id="dano"  >
+          <button onclick="myCalc()" type="button">Submit now</button>
+          <p id="p1"></p>
+     </div>
+     <p id="me"></p>
+
+   
+     
+   
+         
+         
+     
+   </div>
+
+
+
+    
+
+   
+     
+      
+
+
+      <!--<div id="modify" style="background-color: green; box-sizing: border-box; margin: 0; padding: ; overflow: hidden; width: 1340px; height: 100vh;">
+        
+      </div>-->
+
+ <script src="myclas.js"></script>
+<script src="scrit.js"></script>
+</body>
+</html>
